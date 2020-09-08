@@ -10,6 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@lourenci/react-kanban": "^2.0.0",
     "@types/jest": "^26.0.10",
     "@types/mocha": "^8.0.3",
     "@zeit/next-sass": "^1.0.1",
@@ -28,6 +29,7 @@
     "next-redux-wrapper": "^6.0.2",
     "node-sass": "^4.14.1",
     "react": "16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
     "react-dom": "16.13.1",
     "react-modal": "^3.11.2",
     "react-redux": "^7.2.1",

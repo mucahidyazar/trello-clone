@@ -5,10 +5,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-height: 40px;
+  max-height: 5%;
+  min-height: 4rem;
+  height: 5%;
   padding: 0.4rem;
   background-color: $primary;
-  margin-bottom: 4rem;
 }
 
 .menu {

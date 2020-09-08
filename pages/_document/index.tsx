@@ -1,6 +1,5 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import '../../public/static/assets/styles/main.scss'
-import Header from '../../views/layouts/Header'
 
 export default class MyDocument extends Document {
   render() {
@@ -25,6 +24,13 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <style global jsx>{`
+          html,
+          body,
+          div#__next {
+            height: 100%;
+          }
+        `}</style>
       </html>
     )
   }

@@ -78,22 +78,58 @@ export const recentlyViewed = [
 
 export const personal = [
   {
-    id: 10,
+    id: 1,
     type: 'personal',
     name: 'Web Development',
     background: '/static/assets/img/background-1.jpg',
+    lists: [
+      {
+        id: 1,
+        name: 'todo',
+        notes: [
+          {
+            id: 1,
+            title: 'Wash the dishes',
+            description: 'You need to wash the dishes before tomorrow night',
+          },
+          {
+            id: 2,
+            title: 'Go to swim',
+            description: 'You need to wash the dishes before tomorrow night',
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: 'doing',
+        notes: [
+          {
+            id: 3,
+            title: 'Go to take the car',
+            description: 'You need to wash the dishes before tomorrow night',
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: 'done',
+        notes: [],
+      },
+    ],
   },
   {
     id: 11,
     type: 'personal',
     name: 'Design',
     background: '/static/assets/img/background-4.jpg',
+    lists: [],
   },
   {
     id: 12,
     type: 'personal',
     name: 'Photoshop',
     background: '/static/assets/img/background-6.jpg',
+    lists: [],
   },
 ]
 
@@ -142,5 +178,50 @@ export const backgrounds = [
     id: 9,
     type: 'linear',
     background: 'linear-gradient(to right, #0f0c29, #302b63, #24243e)',
+  },
+]
+
+export const boards = [
+  {
+    tasks: {
+      'task-1': {
+        id: 'task-1',
+        content: 'Take out the garbage',
+        description: 'You need to take out the garbage',
+      },
+      'task-2': {
+        id: 'task-2',
+        content: 'Watch my favorite show',
+        description: 'You need to wath that TV show before you sleep',
+      },
+      'task-3': {
+        id: 'task-3',
+        content: 'Charge my phone',
+        description: 'Charge before you go out',
+      },
+      'task-4': {
+        id: 'task-4',
+        content: 'Cook dinner',
+        description: 'Or get a order',
+      },
+    },
+    lists: {
+      'list-1': {
+        id: 'list-1',
+        title: 'To do',
+        taskIds: ['task-1', 'task-2', 'task-3', 'task-4'],
+      },
+      'list-2': {
+        id: 'list-2',
+        title: 'Doing',
+        taskIds: [],
+      },
+      'list-3': {
+        id: 'list-3',
+        title: 'Done',
+        taskIds: [],
+      },
+    },
+    listOrder: ['list-1', 'list-2', 'list-3'],
   },
 ]
